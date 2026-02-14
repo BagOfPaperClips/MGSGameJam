@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class CharacterSelection : MonoBehaviour
 {
@@ -22,17 +25,29 @@ public class CharacterSelection : MonoBehaviour
     [SerializeField] GameObject Client2;
     [SerializeField] GameObject Client3;
 
+    [SerializeField] UnityEngine.UI.Button b;
+    [SerializeField] UnityEngine.UI.Button b1;
+    [SerializeField] UnityEngine.UI.Button b2;
+    [SerializeField] UnityEngine.UI.Button b3;
+
+    private bool flag1 = false;
+    private bool flag2 = false;
     // Start is called before the first frame update
     void Start()
     {
+        b.onClick.AddListener(SeeClient);
+        b1.onClick.AddListener(Help);
+        b2.onClick.AddListener(Action);
+        b3.onClick.AddListener(GO);
+
         //OBJECT1
-        ObjectDescriptions[0] = new string[] { "Discription1P1", "Discription1P2" , "Discription1P3" };
+        ObjectDescriptions[0] = new string[] { "Discription1P1", "Discription1P2" , "Discription1P3", "Theres Nothing else to say" };
 
         //OBJECT2
-        ObjectDescriptions[1] = new string[] { "Discription2P1", "Discription2P2", "Discription2P3" };
+        ObjectDescriptions[1] = new string[] { "Discription2P1", "Discription2P2", "Discription2P3", "Theres Nothing else to say" };
 
         //OBJECT3
-        ObjectDescriptions[2] = new string[] { "Discription3P1", "Discription3P2", "Discription3P3" };
+        ObjectDescriptions[2] = new string[] { "Discription3P1", "Discription3P2", "Discription3P3", "Theres Nothing else to say" };
 
         
     }
@@ -40,17 +55,38 @@ public class CharacterSelection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.K))
         {
             clientNum = NewClient();
             Debug.Log("NEWCLIENT");
         }
-
+        */
         choiceTree();
 
+        /*
         if (Input.GetKeyDown(KeyCode.C))
         {
             NewObject();
+        }*/
+        /*
+        if (flag1)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                NewObject();
+                b1.gameObject.SetActive(true);
+                b2.gameObject.SetActive(true);
+            }
+        }
+        */
+        if (flag2)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                SceneManager.LoadScene("ActionTime");
+                
+            }
         }
     }
 
@@ -82,10 +118,7 @@ public class CharacterSelection : MonoBehaviour
             Client2.SetActive(false);
             Client1.SetActive(false);
         }
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            NewObject();
-        }
+        
 
         return clientNum;
     }
@@ -108,11 +141,11 @@ public class CharacterSelection : MonoBehaviour
     {
         if (choicePart == 3)
         {
-            //END OF HINTS
-            PrintDialog("CUTOFF");
-
+            b1.gameObject.SetActive(false);
+            flag2 = true;
         }
 
+        /*
         //ASKING FOR A HINT
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -122,16 +155,56 @@ public class CharacterSelection : MonoBehaviour
             //REMOVE MONEY FROM THEIR BANK
 
         }
-
+        */
+        /*
         //NO MORE NEED TO HINTS
         if (Input.GetKeyDown(KeyCode.P))
+        {
             PrintDialog("STARTAUCTION");
-
+            if (Input.GetKeyDown(KeyCode.Q))
+                SceneManager.LoadScene("ActionTime");
+        }
+        */
     }
 
     void PrintDialog(string dialog)
     {
         //Prints Dialog
         disc.text = dialog;
+    }
+
+    // ----  BUTTONS ----- //
+
+    void SeeClient()
+    {
+        clientNum = NewClient();
+        Debug.Log("NEWCLIENT");
+        b.gameObject.SetActive(false);
+
+
+        b3.gameObject.SetActive(true);
+        //flag1 = true;
+
+    }
+
+    void Help()
+    {
+        //flag1 = false;
+        Debug.Log("Asked for hint");
+        choicePart = choicePart + 1;
+        PrintDialog(ObjectDescriptions[objNum][choicePart]);
+    }
+    void Action()
+    {
+        //flag1 = false;
+        SceneManager.LoadScene("ActionTime");
+    }
+
+    void GO()
+    {
+        NewObject();
+        b1.gameObject.SetActive(true);
+        b2.gameObject.SetActive(true);
+        b3.gameObject.SetActive(false);
     }
 }
