@@ -11,6 +11,7 @@ public class CharacterSelection : MonoBehaviour
     public string[] ClientsNames = { "Client1", "Client2", "Client3" };
     [SerializeField] int numberOfClients;
     [SerializeField] int clientNum;
+    [SerializeField] int numClient = 0;
 
     public string[][] ObjectDescriptions = new string[3][];
     
@@ -97,6 +98,11 @@ public class CharacterSelection : MonoBehaviour
         Debug.Log("Client: " + clientNum);
         PrintDialog(ClientsNames[clientNum]);
 
+        numClient = StaticData.totalCleints;
+
+        numClient = numClient + 1;
+        StaticData.totalCleints = numClient;
+
         //ENABLE AND DISSABLE CHARACTER SPRITES
         if (clientNum == 0)
         {
@@ -129,6 +135,7 @@ public class CharacterSelection : MonoBehaviour
         //NumberOfObjects = ObjectDescriptions.Length;
         NumberOfObjects = 3;
         objNum = Random.Range(0, NumberOfObjects);
+        StaticData.presentobject = objNum;
         Debug.Log("Object: " + objNum);
         PrintDialog(ObjectDescriptions[objNum][0]);
         choicePart = 0;
