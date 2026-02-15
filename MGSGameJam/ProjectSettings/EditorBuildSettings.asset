@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ActionTime.unity
     guid: c8c0b4dd21a545147af573ccf09deff8
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: 322fc0a870baf8545a4bd483e9b97924
   m_configObjects: {}
