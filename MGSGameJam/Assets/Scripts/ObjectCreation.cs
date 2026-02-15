@@ -58,7 +58,7 @@ public class ObjectCreation : MonoBehaviour
     {
         switch (obj)
         {
-            case 1:
+            case 0:
                 for (int i = 0; i < object1.Length; i++)
                 {
                     object1[i].SetActive(true);
@@ -79,7 +79,7 @@ public class ObjectCreation : MonoBehaviour
                 bset33.gameObject.SetActive(false);
                 break;
 
-            case 2:
+            case 1:
                 for (int i = 0; i < object1.Length; i++)
                 {
                     object2[i].SetActive(true);
@@ -102,7 +102,7 @@ public class ObjectCreation : MonoBehaviour
 
                 break;
 
-            case 3:
+            case 2:
                 for (int i = 0; i < object1.Length; i++)
                 {
                     object3[i].SetActive(true);
