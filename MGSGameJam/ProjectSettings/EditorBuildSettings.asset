@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TutorialScene.unity
     guid: 322fc0a870baf8545a4bd483e9b97924
+  - enabled: 1
+    path: Assets/Scenes/CupMixingChallenge.unity
+    guid: 4d5baa155a4ee2244a4eda9f110191e7
   m_configObjects: {}

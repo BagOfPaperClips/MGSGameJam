@@ -25,6 +25,15 @@ public class SceneTransition : MonoBehaviour
     {
         SceneManager.LoadScene("EndScreen");
     }
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("TutorialScene");
+    }
+    public void CupGame()
+    {
+        SceneManager.LoadScene("CupMixingChallenge");
+    }
+
     public void Quit()
     {
         Application.Quit();
