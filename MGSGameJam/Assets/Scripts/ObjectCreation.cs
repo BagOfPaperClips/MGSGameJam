@@ -12,17 +12,10 @@ public class ObjectCreation : MonoBehaviour
     public GameObject[] object2 = new GameObject[3];
     public GameObject[] object3 = new GameObject[3];
 
-    [SerializeField] UnityEngine.UI.Button bset11;
-    [SerializeField] UnityEngine.UI.Button bset12;
-    [SerializeField] UnityEngine.UI.Button bset13;
+    [SerializeField] UnityEngine.UI.Button bset1;
+    [SerializeField] UnityEngine.UI.Button bset2;
+    [SerializeField] UnityEngine.UI.Button bset3;
 
-    [SerializeField] UnityEngine.UI.Button bset21;
-    [SerializeField] UnityEngine.UI.Button bset22;
-    [SerializeField] UnityEngine.UI.Button bset23;
-
-    [SerializeField] UnityEngine.UI.Button bset31;
-    [SerializeField] UnityEngine.UI.Button bset32;
-    [SerializeField] UnityEngine.UI.Button bset33;
 
     [SerializeField] int objNum;
 
@@ -34,17 +27,10 @@ public class ObjectCreation : MonoBehaviour
     void Start()
     {
         totalCleintsSeen = StaticData.totalCleints;
-        bset11.onClick.AddListener(bbset11);
-        bset12.onClick.AddListener(bbset12);
-        bset13.onClick.AddListener(bbset13);
+        bset1.onClick.AddListener(bbset1);
+        bset2.onClick.AddListener(bbset2);
+        bset3.onClick.AddListener(bbset3);
 
-        bset21.onClick.AddListener(bbset21);
-        bset22.onClick.AddListener(bbset22);
-        bset23.onClick.AddListener(bbset23);
-
-        bset31.onClick.AddListener(bbset31);
-        bset32.onClick.AddListener(bbset32);
-        bset33.onClick.AddListener(bbset33);
 
         objNum = StaticData.presentobject;
     }
@@ -66,17 +52,6 @@ public class ObjectCreation : MonoBehaviour
                     object3[i].SetActive(false);
 
                 }
-                bset11.gameObject.SetActive(true);
-                bset12.gameObject.SetActive(true);
-                bset13.gameObject.SetActive(true);
-
-                bset21.gameObject.SetActive(false);
-                bset22.gameObject.SetActive(false);
-                bset23.gameObject.SetActive(false);
-
-                bset31.gameObject.SetActive(false);
-                bset32.gameObject.SetActive(false);
-                bset33.gameObject.SetActive(false);
                 break;
 
             case 1:
@@ -88,17 +63,6 @@ public class ObjectCreation : MonoBehaviour
 
                 }
 
-                bset11.gameObject.SetActive(false);
-                bset12.gameObject.SetActive(false);
-                bset13.gameObject.SetActive(false);
-
-                bset21.gameObject.SetActive(true);
-                bset22.gameObject.SetActive(true);
-                bset23.gameObject.SetActive(true);
-
-                bset31.gameObject.SetActive(false);
-                bset32.gameObject.SetActive(false);
-                bset33.gameObject.SetActive(false);
 
                 break;
 
@@ -111,142 +75,89 @@ public class ObjectCreation : MonoBehaviour
 
                 }
 
-                bset11.gameObject.SetActive(false);
-                bset12.gameObject.SetActive(false);
-                bset13.gameObject.SetActive(false);
-
-                bset21.gameObject.SetActive(false);
-                bset22.gameObject.SetActive(false);
-                bset23.gameObject.SetActive(false);
-
-                bset31.gameObject.SetActive(true);
-                bset32.gameObject.SetActive(true);
-                bset33.gameObject.SetActive(true);
 
                 break;
 
         }
     }
 
-    void bbset11()
+    void bbset1()
     {
         if (totalCleintsSeen <= 3)
         {
-            SucsessfulGuesses = SucsessfulGuesses + 1;
-            StaticData.correctGuesses = SucsessfulGuesses;
+            switch (objNum)
+            {
+                case 0:
+                    SucsessfulGuesses = SucsessfulGuesses + 1;
+                    StaticData.correctGuesses = SucsessfulGuesses;
+                    Debug.Log(SucsessfulGuesses);
+                    break;
 
-            Debug.Log(SucsessfulGuesses);
+                case 1:
+
+                    break;
+
+                case 2:
+
+                    break;
+
+            }
+            
             SceneManager.LoadScene("Game");
         }
         else
             SceneManager.LoadScene("EndScreen");
     }
-    void bbset12()
+    void bbset2()
     {
         if (totalCleintsSeen <= 3)
         {
-            Debug.Log("END");
+            switch (objNum)
+            {
+                case 0:
+                    
+                    break;
+
+                case 1:
+                    SucsessfulGuesses = SucsessfulGuesses + 1;
+                    StaticData.correctGuesses = SucsessfulGuesses;
+                    Debug.Log(SucsessfulGuesses);
+                    break;
+
+                case 2:
+
+                    break;
+
+            }
 
             SceneManager.LoadScene("Game");
         }
         else
             SceneManager.LoadScene("EndScreen");
     }
-    void bbset13()
+    void bbset3()
     {
         if (totalCleintsSeen <= 3)
         {
-            Debug.Log("END");
+            switch(objNum)
+            {
+                case 0:
 
+                    break;
+
+                case 1:
+                    
+                    break;
+
+                case 2:
+                    SucsessfulGuesses = SucsessfulGuesses + 1;
+                    StaticData.correctGuesses = SucsessfulGuesses;
+                    Debug.Log(SucsessfulGuesses);
+                    break;
+
+                }
             SceneManager.LoadScene("Game");
 
-        }
-        else
-            SceneManager.LoadScene("EndScreen");
-    }
-
-    /// <summary>
-    /// ---------------------
-    /// </summary>
-
-    void bbset21()
-    {
-        if (totalCleintsSeen <= 3)
-        {
-            Debug.Log("END");
-            SucsessfulGuesses = SucsessfulGuesses + 1;
-            StaticData.correctGuesses = SucsessfulGuesses;
-            Debug.Log(SucsessfulGuesses);
-
-            SceneManager.LoadScene("Game");
-            //SceneManager.LoadScene("ActionTime");
-        }
-        else
-            SceneManager.LoadScene("EndScreen");
-    }
-    void bbset22()
-    {
-        if (totalCleintsSeen <= 3)
-        {
-            Debug.Log("END");
-
-            SceneManager.LoadScene("Game");
-            //SceneManager.LoadScene("ActionTime");
-        }
-        else
-            SceneManager.LoadScene("EndScreen");
-    }
-    void bbset23()
-    {
-        if (totalCleintsSeen <= 3)
-        {
-            Debug.Log("END");
-
-            SceneManager.LoadScene("Game");
-            //SceneManager.LoadScene("ActionTime");
-        }
-        else
-            SceneManager.LoadScene("EndScreen");
-    }
-
-    /// <summary>
-    /// ----------------------
-    /// </summary>
-    void bbset31()
-    {
-        if (totalCleintsSeen <= 3)
-        {
-            Debug.Log("END");
-
-            SceneManager.LoadScene("Game");
-            //SceneManager.LoadScene("ActionTime");
-        }
-        else
-            SceneManager.LoadScene("EndScreen");
-
-    }
-    void bbset32()
-    {
-        if (totalCleintsSeen <= 3)
-        {
-            Debug.Log("END");
-            SucsessfulGuesses = SucsessfulGuesses + 1;
-            StaticData.correctGuesses = SucsessfulGuesses;
-
-            SceneManager.LoadScene("Game");
-            Debug.Log(SucsessfulGuesses);
-            //SceneManager.LoadScene("ActionTime");
-        }
-        else
-            SceneManager.LoadScene("EndScreen");
-    }
-    void bbset33()
-    {
-        if (totalCleintsSeen <= 3)
-        {
-            Debug.Log("END");
-            SceneManager.LoadScene("Game");
-            //SceneManager.LoadScene("ActionTime");
         }
         else
             SceneManager.LoadScene("EndScreen");

@@ -133,7 +133,7 @@ public class CharacterSelection : MonoBehaviour
     {
         //Randomly picks an Object from the list and plays the first discription
         //NumberOfObjects = ObjectDescriptions.Length;
-        NumberOfObjects = 3;
+        NumberOfObjects = 3;                                ///CHANGE THIS WHEN MORE ITEMS ARE ADDED
         objNum = Random.Range(0, NumberOfObjects);
         StaticData.presentobject = objNum;
         Debug.Log("Object: " + objNum);
