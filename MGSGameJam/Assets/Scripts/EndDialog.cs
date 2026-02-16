@@ -5,7 +5,7 @@ using TMPro;
 
 public class EndDialog : MonoBehaviour
 {
-    [SerializeField] string[] dialog = { "D1", "D2", "D3" };
+    [SerializeField] string[] dialog = { "You’ll be sleepin’ with the fishes tonight.", "Seems this one ain’t so bright.", "Oof! Be glad I paid you in advance.", "Oooh, baby, we're having dinner tonight!" };
 
     [SerializeField] int numSuccess;
     [SerializeField] TextMeshProUGUI text1;
@@ -20,12 +20,15 @@ public class EndDialog : MonoBehaviour
     {
         switch (numSuccess){
             case 0:
-                text1.text = dialog[1];
+                text1.text = dialog[0];
                 break;
             case 1:
-                text1.text = dialog[2];
+                text1.text = dialog[1];
                 break;
             case 2:
+                text1.text = dialog[2];
+                break;
+            case 3:
                 text1.text = dialog[3];
                 break;
         }

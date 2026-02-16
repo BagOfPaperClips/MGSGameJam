@@ -514,9 +514,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-  - D1
-  - D2
-  - D3
+  - "You guessed none correctly.    You\u2019ll be sleepin\u2019 with the fishes
+    tonight."
+  - "You guessed one correctly.    Seems this one ain\u2019t so bright."
+  - You guessed two correctly.    Oof! Be glad I paid you in advance
+  - You got them all!     Oooh, baby, we're having dinner tonight!
   numSuccess: 0
   text1: {fileID: 1065881797}
 --- !u!1 &705507993
@@ -789,8 +791,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 14.9
+  m_fontSizeBase: 14.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -825,7 +827,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -37.21467, w: 0}
+  m_margin: {x: 0, y: 0, z: -83.75686, w: -31.063068}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

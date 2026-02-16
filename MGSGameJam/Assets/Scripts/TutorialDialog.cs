@@ -40,6 +40,18 @@ public class TutorialDialog : MonoBehaviour
 
                 break;
             case 4:
+                textObj.text = dialog[4];
+
+                break;
+            case 5:
+                textObj.text = dialog[5];
+
+                break;
+            case 6:
+                textObj.text = dialog[6];
+
+                break;
+            case 7:
                 SceneManager.LoadScene("Game");
                 break;
         }
