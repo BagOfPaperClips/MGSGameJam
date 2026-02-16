@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CupMixerChallenge : MonoBehaviour
 {
     [Header("UI Settings")]
     public TMP_Text counterTxt;
+    public TMP_Text numberOfStrikes;
     public Image prizeIndicator;
 
     [Header("Game Settings")]
@@ -21,12 +23,15 @@ public class CupMixerChallenge : MonoBehaviour
     public Sprite layingCup;
 
     private int score = 0;
+    private int strikes = 0;
+
     private bool isShuffling = false;
     private Vector3[] startPositions;
 
     void Start()
     {
         score = 0;
+        strikes = 0;
         UpdateCounterUI();
         prizeIndicator.enabled = false;
 
@@ -114,12 +119,30 @@ public class CupMixerChallenge : MonoBehaviour
         }
         else
         {
-            score = 0;
+            //score = 0;
+            strikes++;
+            UpdateStrikesUI();
             StartCoroutine(FlashCounter(Color.red));
         }
         UpdateCounterUI();
 
-        StartCoroutine(GameLoop());
+        if (score < 3 && strikes < 3)
+        {
+            StartCoroutine(GameLoop());
+        }
+        else
+        {
+            ToggleButtons(false);
+
+            if (score == 3)
+            {
+                ChallengeComplete();
+            }
+            if (strikes == 3)
+            {
+                ChallengeFailed();
+            }
+        }
     }
 
     IEnumerator AnimateCupReveal(GameObject cup, bool showPrizeIndicator)
@@ -146,6 +169,8 @@ public class CupMixerChallenge : MonoBehaviour
         counterTxt.color = Color.white;
     }
 
+    void UpdateStrikesUI() => numberOfStrikes.text = "Strikes: " + strikes;
+
     void ToggleButtons(bool state)
     {
         foreach (GameObject c in cups)
@@ -153,5 +178,15 @@ public class CupMixerChallenge : MonoBehaviour
             Button b = c.GetComponent<Button>();
             if (b != null) b.interactable = state;
         }
+    }
+
+    void ChallengeComplete()
+    {
+
+    }
+
+    void ChallengeFailed()
+    {
+        SceneManager.LoadScene("Game");
     }
 }
