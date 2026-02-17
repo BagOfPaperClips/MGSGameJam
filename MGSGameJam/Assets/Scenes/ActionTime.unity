@@ -3276,6 +3276,7 @@ MonoBehaviour:
   objNum: 0
   SucsessfulGuesses: 0
   totalCleintsSeen: 0
+  balanceText: {fileID: 1301663930}
 --- !u!114 &2033807697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3298,7 +3299,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033807691}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d40b75c5928152e4ea594bc68e1b2d78, type: 3}
   m_Name: 

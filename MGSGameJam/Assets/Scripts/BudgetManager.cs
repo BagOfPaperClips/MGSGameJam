@@ -8,7 +8,7 @@ public class BudgetManager : MonoBehaviour
 {
     public TMP_Text budgetText;
     public int currentBudget;
-
+    /*
     void Start()
     {
         if (StaticData.b1 == false)
@@ -51,8 +51,8 @@ public class BudgetManager : MonoBehaviour
     //    }
 
     //    budgetText.text = "Budget: " + currentBudget;
-    //}
-
+    //}*/
+    /*
     public void AddMoney(int moneyToAdd)
     {
         StaticData.budget = currentBudget;
@@ -62,5 +62,5 @@ public class BudgetManager : MonoBehaviour
         budgetText.text = "Budget: " + currentBudget;
         StaticData.budget = currentBudget;
         currentBudget = StaticData.budget;
-    }
+    }*/
 }

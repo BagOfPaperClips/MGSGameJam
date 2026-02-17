@@ -7,6 +7,5 @@ public class StaticData : MonoBehaviour
     public static int presentobject;
     public static int totalCleints = 0;
     public static int correctGuesses;
-    public static int budget;
-    public static bool b1 = false;
+    public static int balance = 1000;
 }

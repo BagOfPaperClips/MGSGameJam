@@ -19,6 +19,7 @@ public class CharacterSelection : MonoBehaviour
     [SerializeField] int objNum;
 
     [SerializeField] TextMeshProUGUI disc;
+    [SerializeField] TextMeshProUGUI balanceAmount;
 
     [SerializeField] int choicePart = 0;
 
@@ -35,6 +36,8 @@ public class CharacterSelection : MonoBehaviour
 
     private bool flag1 = false;
     private bool flag2 = false;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -58,7 +61,7 @@ public class CharacterSelection : MonoBehaviour
         //OBJECT5
         ObjectDescriptions[4] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
 
-
+        balanceAmount.text = "Balance: " + (StaticData.balance).ToString();
     }
 
     // Update is called once per frame
@@ -73,6 +76,8 @@ public class CharacterSelection : MonoBehaviour
         */
         choiceTree();
 
+        if (StaticData.balance <= 0)
+            SceneManager.LoadScene("EndScreen");
         /*
         if (Input.GetKeyDown(KeyCode.C))
         {
@@ -178,6 +183,7 @@ public class CharacterSelection : MonoBehaviour
 
     void choiceTree()
     {
+        
         if (choicePart == 3)
         {
             b1.gameObject.SetActive(false);
@@ -232,6 +238,9 @@ public class CharacterSelection : MonoBehaviour
         Debug.Log("Asked for hint");
         choicePart = choicePart + 1;
         PrintDialog(ObjectDescriptions[objNum][choicePart]);
+        StaticData.balance = StaticData.balance - 200;      /////------PRICE OF HINT -------//////////
+
+        balanceAmount.text = "Balance: " + (StaticData.balance).ToString();
     }
     void Action()
     {

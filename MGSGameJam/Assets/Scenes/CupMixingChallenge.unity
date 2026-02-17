@@ -435,6 +435,7 @@ MonoBehaviour:
   rewards: {fileID: 1543151822}
   moneyValue: 50
   budgetManager: {fileID: 421335618}
+  balanceText: {fileID: 1913056797}
 --- !u!114 &421335613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,14 +544,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421335611}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d40b75c5928152e4ea594bc68e1b2d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   budgetText: {fileID: 1913056797}
   currentBudget: 1000
-  b: 0
 --- !u!1 &507093208
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,7 +2059,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Balance: '
+  m_text: 'Balance: 1000'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c64818ded262b84087db88f7e94df44, type: 2}
   m_sharedMaterial: {fileID: 6776043698204463086, guid: 4c64818ded262b84087db88f7e94df44, type: 2}

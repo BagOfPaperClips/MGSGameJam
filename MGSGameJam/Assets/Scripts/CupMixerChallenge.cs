@@ -38,6 +38,8 @@ public class CupMixerChallenge : MonoBehaviour
     private bool isShuffling = false;
     private Vector3[] startPositions;
 
+    [SerializeField] TextMeshProUGUI balanceText;
+
     void Start()
     {
         score = 0;
@@ -58,7 +60,12 @@ public class CupMixerChallenge : MonoBehaviour
 
         StartCoroutine(GameLoop());
     }
-
+    void Update()
+    {
+        if(StaticData.balance <= 0)
+            SceneManager.LoadScene("EndScreen");
+        
+    }
     IEnumerator GameLoop()
     {
         isShuffling = true;
@@ -217,8 +224,10 @@ public class CupMixerChallenge : MonoBehaviour
 
     public void GetMoneyReward()
     {
+        StaticData.balance = StaticData.balance + moneyValue;
+        balanceText.text = "Balance: "+(StaticData.balance).ToString();
         SceneManager.LoadScene("ActionTime");
-        budgetManager.AddMoney(moneyValue);
+        
     }
 
     void ChallengeFailed()

@@ -4,6 +4,7 @@ using System.Net;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 
 public class ObjectCreation : MonoBehaviour
@@ -27,6 +28,8 @@ public class ObjectCreation : MonoBehaviour
 
     [SerializeField] int totalCleintsSeen;
 
+    [SerializeField] TextMeshProUGUI balanceText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,12 +40,15 @@ public class ObjectCreation : MonoBehaviour
         bset4.onClick.AddListener(bbset4);
 
         objNum = StaticData.presentobject;
+        balanceText.text = "Balance: "+(StaticData.balance).ToString();
     }
     // Update is called once per frame
     void Update()
     {
         WhichObject(objNum);
 
+        if (StaticData.balance <= 0)
+            SceneManager.LoadScene("EndScreen");
     }
     void WhichObject(int obj)
     {
@@ -122,25 +128,27 @@ public class ObjectCreation : MonoBehaviour
                     SucsessfulGuesses = SucsessfulGuesses + 1;
                     StaticData.correctGuesses = SucsessfulGuesses;
                     Debug.Log(SucsessfulGuesses);
+
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
                 case 1:
-
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
                 case 2:
-
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
                 case 3:
-
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
                 case 4:
-
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
             }
-            
+            balanceText.text = "Balance: " + (StaticData.balance).ToString();
             SceneManager.LoadScene("Game");
         }
         else
@@ -153,23 +161,25 @@ public class ObjectCreation : MonoBehaviour
             switch (objNum)
             {
                 case 0:
-                    
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
                 case 1:
                     SucsessfulGuesses = SucsessfulGuesses + 1;
                     StaticData.correctGuesses = SucsessfulGuesses;
                     Debug.Log(SucsessfulGuesses);
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
                 case 2:
-
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
                 case 3:
-
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
                 case 4:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     SucsessfulGuesses = SucsessfulGuesses + 1;
                     StaticData.correctGuesses = SucsessfulGuesses;
                     Debug.Log(SucsessfulGuesses);
@@ -177,6 +187,7 @@ public class ObjectCreation : MonoBehaviour
 
             }
 
+            balanceText.text = "Balance: " + (StaticData.balance).ToString();
             SceneManager.LoadScene("Game");
         }
         else
@@ -189,28 +200,31 @@ public class ObjectCreation : MonoBehaviour
             switch(objNum)
             {
                 case 0:
-
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
                 case 1:
-                    
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
                 case 2:
                     SucsessfulGuesses = SucsessfulGuesses + 1;
                     StaticData.correctGuesses = SucsessfulGuesses;
                     Debug.Log(SucsessfulGuesses);
+
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
                 case 3:
-                    
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
                 case 4:
-
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
             }
 
+            balanceText.text = "Balance: " + (StaticData.balance).ToString();
             SceneManager.LoadScene("Game");
 
         }
@@ -224,26 +238,29 @@ public class ObjectCreation : MonoBehaviour
             switch (objNum)
             {
                 case 0:
-
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
                 case 1:
-
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
                 case 2:
-
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
                 case 3:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
                 case 4:
                     SucsessfulGuesses = SucsessfulGuesses + 1;
                     StaticData.correctGuesses = SucsessfulGuesses;
                     Debug.Log(SucsessfulGuesses);
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
             }
 
+            balanceText.text = "Balance: " + (StaticData.balance).ToString();
             SceneManager.LoadScene("Game");
 
         }

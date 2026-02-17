@@ -18,19 +18,28 @@ public class EndDialog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        switch (numSuccess){
-            case 0:
-                text1.text = dialog[0];
-                break;
-            case 1:
-                text1.text = dialog[1];
-                break;
-            case 2:
-                text1.text = dialog[2];
-                break;
-            case 3:
-                text1.text = dialog[3];
-                break;
+        if (StaticData.balance <= 0)
+        {
+            text1.text = "You ran out of money? What a bloody fool";
         }
+        else
+        {
+            switch (numSuccess)
+            {
+                case 0:
+                    text1.text = dialog[0];
+                    break;
+                case 1:
+                    text1.text = dialog[1];
+                    break;
+                case 2:
+                    text1.text = dialog[2];
+                    break;
+                case 3:
+                    text1.text = dialog[3];
+                    break;
+            }
+        }
+        
     }
 }
