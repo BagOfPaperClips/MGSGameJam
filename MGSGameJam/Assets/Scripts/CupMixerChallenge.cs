@@ -22,6 +22,16 @@ public class CupMixerChallenge : MonoBehaviour
     public Sprite standingCup;
     public Sprite layingCup;
 
+    [Header("LevelCompleteOptions")]
+    public GameObject minigameCompleteButtons;
+
+    [Header("RewardOptions")]
+    public GameObject rewards;
+    //public GameObject hintButton;
+    //public GameObject moneyButton;
+    public int moneyValue;
+    public BudgetManager budgetManager;
+
     private int score = 0;
     private int strikes = 0;
 
@@ -33,7 +43,11 @@ public class CupMixerChallenge : MonoBehaviour
         score = 0;
         strikes = 0;
         UpdateCounterUI();
+        UpdateStrikesUI();
         prizeIndicator.enabled = false;
+
+        minigameCompleteButtons.SetActive(false);
+        rewards.SetActive(false);
 
         // Stores the starting positions of the cups so we know where they belong
         startPositions = new Vector3[cups.Length];
@@ -182,11 +196,33 @@ public class CupMixerChallenge : MonoBehaviour
 
     void ChallengeComplete()
     {
+        minigameCompleteButtons.SetActive(true);
+    }
 
+    public void NextLevel ()
+    {
+
+    }
+
+    public void DisplayRewards()
+    {
+        minigameCompleteButtons.SetActive(false);
+        rewards.SetActive(true);
+    }
+
+    public void GetHintReward()
+    {
+
+    }
+
+    public void GetMoneyReward()
+    {
+        SceneManager.LoadScene("ActionTime");
+        budgetManager.AddMoney(moneyValue);
     }
 
     void ChallengeFailed()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("ActionTime");
     }
 }
