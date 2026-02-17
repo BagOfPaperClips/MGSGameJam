@@ -182,7 +182,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -321,7 +321,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Title
+  m_text: Golden Gavel
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b924ea09ea264e5448e9189d9148dc2e, type: 2}
   m_sharedMaterial: {fileID: 1666880270534173439, guid: b924ea09ea264e5448e9189d9148dc2e, type: 2}
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -125.19533, y: 0, z: -125.182434, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

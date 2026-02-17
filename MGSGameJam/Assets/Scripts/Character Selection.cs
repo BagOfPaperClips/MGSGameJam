@@ -8,12 +8,12 @@ using UnityEngine.UIElements;
 
 public class CharacterSelection : MonoBehaviour
 {
-    public string[] ClientsNames = { "Client1", "Client2", "Client3" };
+    public string[] ClientsNames = { "Client1", "Client2", "Client3", "Client4", "Client5" };
     [SerializeField] int numberOfClients;
     [SerializeField] int clientNum;
     [SerializeField] int numClient = 0;
 
-    public string[][] ObjectDescriptions = new string[3][];
+    public string[][] ObjectDescriptions = new string[5][];
     
     [SerializeField] int NumberOfObjects;
     [SerializeField] int objNum;
@@ -25,6 +25,8 @@ public class CharacterSelection : MonoBehaviour
     [SerializeField] GameObject Client1;
     [SerializeField] GameObject Client2;
     [SerializeField] GameObject Client3;
+    [SerializeField] GameObject Client4;
+    [SerializeField] GameObject Client5;
 
     [SerializeField] UnityEngine.UI.Button b;
     [SerializeField] UnityEngine.UI.Button b1;
@@ -50,7 +52,13 @@ public class CharacterSelection : MonoBehaviour
         //OBJECT3
         ObjectDescriptions[2] = new string[] { "Discription3P1", "Discription3P2", "Discription3P3", "Theres Nothing else to say" };
 
-        
+        //OBJECT4
+        ObjectDescriptions[3] = new string[] { "Discription4P1", "Discription4P2", "Discription4P3", "Theres Nothing else to say" };
+
+        //OBJECT5
+        ObjectDescriptions[4] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+
+
     }
 
     // Update is called once per frame
@@ -94,7 +102,7 @@ public class CharacterSelection : MonoBehaviour
     int NewClient()
     {
         numberOfClients = ClientsNames.Length;
-        clientNum = Random.Range(0, numberOfClients);
+        clientNum = Random.Range(0, 4);
         Debug.Log("Client: " + clientNum);
         PrintDialog(ClientsNames[clientNum]);
 
@@ -110,19 +118,43 @@ public class CharacterSelection : MonoBehaviour
 
             Client2.SetActive(false);
             Client3.SetActive(false);
+            Client4.SetActive(false);
+            Client5.SetActive(false);
         }
         else if (clientNum == 1){
             Client2.SetActive(true);
 
             Client1.SetActive(false);
             Client3.SetActive(false);
+            Client4.SetActive(false);
+            Client5.SetActive(false);
         }
-        else
+        else if (clientNum == 2)
         {
             Client3.SetActive(true);
 
             Client2.SetActive(false);
             Client1.SetActive(false);
+            Client4.SetActive(false);
+            Client5.SetActive(false);
+        }
+        else if (clientNum == 3)
+        {
+            Client4.SetActive(true);
+
+            Client2.SetActive(false);
+            Client1.SetActive(false);
+            Client3.SetActive(false);
+            Client5.SetActive(false);
+        }
+        else
+        {
+            Client5.SetActive(true);
+
+            Client2.SetActive(false);
+            Client1.SetActive(false);
+            Client4.SetActive(false);
+            Client3.SetActive(false);
         }
         
 
@@ -133,7 +165,7 @@ public class CharacterSelection : MonoBehaviour
     {
         //Randomly picks an Object from the list and plays the first discription
         //NumberOfObjects = ObjectDescriptions.Length;
-        NumberOfObjects = 3;                                ///CHANGE THIS WHEN MORE ITEMS ARE ADDED
+        NumberOfObjects = 5;                                ///CHANGE THIS WHEN MORE ITEMS ARE ADDED
         objNum = Random.Range(0, NumberOfObjects);
         StaticData.presentobject = objNum;
         Debug.Log("Object: " + objNum);

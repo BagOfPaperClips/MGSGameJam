@@ -8,13 +8,17 @@ using UnityEngine.SceneManagement;
 
 public class ObjectCreation : MonoBehaviour
 {
-    public GameObject[] object1 = new GameObject[3];
-    public GameObject[] object2 = new GameObject[3];
-    public GameObject[] object3 = new GameObject[3];
+    public GameObject[] object1 = new GameObject[4];
+    public GameObject[] object2 = new GameObject[4];
+    public GameObject[] object3 = new GameObject[4];
+    public GameObject[] object4 = new GameObject[4];
+    public GameObject[] object5 = new GameObject[4];
 
     [SerializeField] UnityEngine.UI.Button bset1;
     [SerializeField] UnityEngine.UI.Button bset2;
     [SerializeField] UnityEngine.UI.Button bset3;
+    [SerializeField] UnityEngine.UI.Button bset4;
+
 
 
     [SerializeField] int objNum;
@@ -30,7 +34,7 @@ public class ObjectCreation : MonoBehaviour
         bset1.onClick.AddListener(bbset1);
         bset2.onClick.AddListener(bbset2);
         bset3.onClick.AddListener(bbset3);
-
+        bset4.onClick.AddListener(bbset4);
 
         objNum = StaticData.presentobject;
     }
@@ -50,6 +54,8 @@ public class ObjectCreation : MonoBehaviour
                     object1[i].SetActive(true);
                     object2[i].SetActive(false);
                     object3[i].SetActive(false);
+                    object4[i].SetActive(false);
+                    object5[i].SetActive(false);
 
                 }
                 break;
@@ -60,6 +66,8 @@ public class ObjectCreation : MonoBehaviour
                     object2[i].SetActive(true);
                     object1[i].SetActive(false);
                     object3[i].SetActive(false);
+                    object4[i].SetActive(false);
+                    object5[i].SetActive(false);
 
                 }
 
@@ -72,12 +80,35 @@ public class ObjectCreation : MonoBehaviour
                     object3[i].SetActive(true);
                     object2[i].SetActive(false);
                     object1[i].SetActive(false);
+                    object4[i].SetActive(false);
+                    object5[i].SetActive(false);
 
                 }
-
-
                 break;
 
+            case 3:
+                for (int i = 0; i < object1.Length; i++)
+                {
+                    object3[i].SetActive(false);
+                    object2[i].SetActive(false);
+                    object1[i].SetActive(false);
+                    object4[i].SetActive(true);
+                    object5[i].SetActive(false);
+
+                }
+                break;
+
+            case 4:
+                for (int i = 0; i < object1.Length; i++)
+                {
+                    object3[i].SetActive(false);
+                    object2[i].SetActive(false);
+                    object1[i].SetActive(false);
+                    object4[i].SetActive(false);
+                    object5[i].SetActive(true);
+
+                }
+                break;
         }
     }
 
@@ -98,6 +129,13 @@ public class ObjectCreation : MonoBehaviour
                     break;
 
                 case 2:
+
+                    break;
+
+                case 3:
+
+                    break;
+                case 4:
 
                     break;
 
@@ -128,6 +166,15 @@ public class ObjectCreation : MonoBehaviour
 
                     break;
 
+                case 3:
+
+                    break;
+                case 4:
+                    SucsessfulGuesses = SucsessfulGuesses + 1;
+                    StaticData.correctGuesses = SucsessfulGuesses;
+                    Debug.Log(SucsessfulGuesses);
+                    break;
+
             }
 
             SceneManager.LoadScene("Game");
@@ -155,7 +202,48 @@ public class ObjectCreation : MonoBehaviour
                     Debug.Log(SucsessfulGuesses);
                     break;
 
-                }
+                case 3:
+                    
+                    break;
+                case 4:
+
+                    break;
+
+            }
+
+            SceneManager.LoadScene("Game");
+
+        }
+        else
+            SceneManager.LoadScene("EndScreen");
+    }
+    void bbset4()
+    {
+        if (totalCleintsSeen <= 3)
+        {
+            switch (objNum)
+            {
+                case 0:
+
+                    break;
+
+                case 1:
+
+                    break;
+
+                case 2:
+
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    SucsessfulGuesses = SucsessfulGuesses + 1;
+                    StaticData.correctGuesses = SucsessfulGuesses;
+                    Debug.Log(SucsessfulGuesses);
+                    break;
+
+            }
+
             SceneManager.LoadScene("Game");
 
         }
