@@ -38,6 +38,8 @@ public class CupMixerChallenge : MonoBehaviour
     private int score = 0;
     private int strikes = 0;
 
+    public GameObject cupGameScreen;
+
     private bool isShuffling = false;
     private Vector3[] startPositions;
 
@@ -251,23 +253,23 @@ public class CupMixerChallenge : MonoBehaviour
 
     public void GetHintReward()
     {
-        SceneManager.LoadScene("Game");
-
         //Debug.Log("Asked for hint");
         //characterSelection.choicePart = characterSelection.choicePart + 1;
         //characterSelection.PrintDialog(characterSelection.ObjectDescriptions[characterSelection.objNum][characterSelection.choicePart]);
+
+        cupGameScreen.SetActive(false);
     }
 
     public void GetMoneyReward()
     {
         StaticData.balance = StaticData.balance + moneyValue;
         balanceText.text = "Balance: "+(StaticData.balance).ToString();
-        SceneManager.LoadScene("Game");
-        
+
+        cupGameScreen.SetActive(false);
     }
 
     void ChallengeFailed()
     {
-        SceneManager.LoadScene("Game");
+        cupGameScreen.SetActive(false);
     }
 }
