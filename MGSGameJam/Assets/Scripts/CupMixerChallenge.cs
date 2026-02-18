@@ -251,6 +251,8 @@ public class CupMixerChallenge : MonoBehaviour
 
     public void GetHintReward()
     {
+        SceneManager.LoadScene("Game");
+
         //Debug.Log("Asked for hint");
         //characterSelection.choicePart = characterSelection.choicePart + 1;
         //characterSelection.PrintDialog(characterSelection.ObjectDescriptions[characterSelection.objNum][characterSelection.choicePart]);
@@ -260,12 +262,12 @@ public class CupMixerChallenge : MonoBehaviour
     {
         StaticData.balance = StaticData.balance + moneyValue;
         balanceText.text = "Balance: "+(StaticData.balance).ToString();
-        SceneManager.LoadScene("ActionTime");
+        SceneManager.LoadScene("Game");
         
     }
 
     void ChallengeFailed()
     {
-        SceneManager.LoadScene("ActionTime");
+        SceneManager.LoadScene("Game");
     }
 }
