@@ -15,8 +15,8 @@ public class CupMixerChallenge : MonoBehaviour
     [Header("Game Settings")]
     public GameObject[] cups;
     public float liftHeight = 150f;
-    public int totalRounds = 3;
-    public float moveDuration = 0.5f; // How long a move takes in seconds
+    public int totalRounds = 5;
+    public float moveDuration = 0.2f; // How long a move takes in seconds
 
     [Header("Sprites")]
     public Sprite standingCup;
@@ -24,6 +24,8 @@ public class CupMixerChallenge : MonoBehaviour
 
     [Header("LevelCompleteOptions")]
     public GameObject minigameCompleteButtons;
+    public GameObject finalMinigameCompleteButton;
+    public int numberOfTimesCompleted = 0;
 
     [Header("RewardOptions")]
     public GameObject rewards;
@@ -31,6 +33,7 @@ public class CupMixerChallenge : MonoBehaviour
     //public GameObject moneyButton;
     public int moneyValue;
     public BudgetManager budgetManager;
+    public CharacterSelection characterSelection;
 
     private int score = 0;
     private int strikes = 0;
@@ -49,6 +52,7 @@ public class CupMixerChallenge : MonoBehaviour
         prizeIndicator.enabled = false;
 
         minigameCompleteButtons.SetActive(false);
+        finalMinigameCompleteButton.SetActive(false);
         rewards.SetActive(false);
 
         // Stores the starting positions of the cups so we know where they belong
@@ -203,23 +207,53 @@ public class CupMixerChallenge : MonoBehaviour
 
     void ChallengeComplete()
     {
-        minigameCompleteButtons.SetActive(true);
+        numberOfTimesCompleted++;
+
+        if (numberOfTimesCompleted <= 2)
+        {
+            minigameCompleteButtons.SetActive(true);
+        }
+        if (numberOfTimesCompleted == 3)
+        {
+            finalMinigameCompleteButton.SetActive(true);
+        }
     }
 
     public void NextLevel ()
     {
+        if (numberOfTimesCompleted == 1)
+        {
+            totalRounds = 7;
+            moveDuration = 0.15f;
+            minigameCompleteButtons.SetActive(false);
+            score = 0;
+            UpdateCounterUI();
+            StartCoroutine(GameLoop());
+        }
 
+        if (numberOfTimesCompleted == 2)
+        {
+            totalRounds = 10;
+            moveDuration = 0.1f;
+            minigameCompleteButtons.SetActive(false);
+            score = 0;
+            UpdateCounterUI();
+            StartCoroutine(GameLoop());
+        }
     }
 
     public void DisplayRewards()
     {
         minigameCompleteButtons.SetActive(false);
+        finalMinigameCompleteButton.SetActive(false);
         rewards.SetActive(true);
     }
 
     public void GetHintReward()
     {
-
+        //Debug.Log("Asked for hint");
+        //characterSelection.choicePart = characterSelection.choicePart + 1;
+        //characterSelection.PrintDialog(characterSelection.ObjectDescriptions[characterSelection.objNum][characterSelection.choicePart]);
     }
 
     public void GetMoneyReward()

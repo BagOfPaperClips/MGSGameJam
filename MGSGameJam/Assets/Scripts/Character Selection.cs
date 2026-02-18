@@ -16,12 +16,12 @@ public class CharacterSelection : MonoBehaviour
     public string[][] ObjectDescriptions = new string[5][];
     
     [SerializeField] int NumberOfObjects;
-    [SerializeField] int objNum;
+    public int objNum;
 
     [SerializeField] TextMeshProUGUI disc;
     [SerializeField] TextMeshProUGUI balanceAmount;
 
-    [SerializeField] int choicePart = 0;
+    public int choicePart = 0;
 
     [SerializeField] GameObject Client1;
     [SerializeField] GameObject Client2;
@@ -166,7 +166,7 @@ public class CharacterSelection : MonoBehaviour
         return clientNum;
     }
 
-    int NewObject()
+    public int NewObject()
     {
         //Randomly picks an Object from the list and plays the first discription
         //NumberOfObjects = ObjectDescriptions.Length;
@@ -181,7 +181,7 @@ public class CharacterSelection : MonoBehaviour
         return objNum;
     }
 
-    void choiceTree()
+    public void choiceTree()
     {
         
         if (choicePart == 3)
@@ -212,7 +212,7 @@ public class CharacterSelection : MonoBehaviour
         */
     }
 
-    void PrintDialog(string dialog)
+    public void PrintDialog(string dialog)
     {
         //Prints Dialog
         disc.text = dialog;
@@ -232,7 +232,7 @@ public class CharacterSelection : MonoBehaviour
 
     }
 
-    void Help()
+    public void Help()
     {
         //flag1 = false;
         Debug.Log("Asked for hint");
