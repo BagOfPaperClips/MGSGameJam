@@ -20,7 +20,7 @@ public class EndDialog : MonoBehaviour
     {
         if (StaticData.balance <= 0)
         {
-            text1.text = "You ran out of money? What a bloody fool";
+            text1.text = "You ran out of money? What a bloody fool...";
         }
         else
         {
