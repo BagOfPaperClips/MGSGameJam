@@ -34,9 +34,13 @@ public class CharacterSelection : MonoBehaviour
     [SerializeField] UnityEngine.UI.Button b2;
     [SerializeField] UnityEngine.UI.Button b3;
 
+    public GameObject playCupChallengeButton;
+    public GameObject cupGameScreen;
+
+    public GameObject dialogueBox;
+
     private bool flag1 = false;
     private bool flag2 = false;
-
     
     // Start is called before the first frame update
     void Start()
@@ -45,6 +49,9 @@ public class CharacterSelection : MonoBehaviour
         b1.onClick.AddListener(Help);
         b2.onClick.AddListener(Action);
         b3.onClick.AddListener(GO);
+        playCupChallengeButton.SetActive(false);
+
+        dialogueBox.SetActive(false);
 
         //OBJECT1
         ObjectDescriptions[0] = new string[] { "Discription1P1", "Discription1P2" , "Discription1P3", "Theres Nothing else to say" };
@@ -225,11 +232,10 @@ public class CharacterSelection : MonoBehaviour
         clientNum = NewClient();
         Debug.Log("NEWCLIENT");
         b.gameObject.SetActive(false);
-
-
         b3.gameObject.SetActive(true);
-        //flag1 = true;
 
+        dialogueBox.SetActive(true);
+        //flag1 = true;
     }
 
     public void Help()
@@ -254,5 +260,11 @@ public class CharacterSelection : MonoBehaviour
         b1.gameObject.SetActive(true);
         b2.gameObject.SetActive(true);
         b3.gameObject.SetActive(false);
+        playCupChallengeButton.SetActive(true);
+    }
+
+    public void StartCupGame()
+    {
+        cupGameScreen.SetActive(true);
     }
 }

@@ -29,9 +29,9 @@ public class CupMixerChallenge : MonoBehaviour
 
     [Header("RewardOptions")]
     public GameObject rewards;
-    //public GameObject hintButton;
-    //public GameObject moneyButton;
+    public GameObject firstMinigameReward;
     public int moneyValue;
+
     public BudgetManager budgetManager;
     public CharacterSelection characterSelection;
 
@@ -56,6 +56,7 @@ public class CupMixerChallenge : MonoBehaviour
         minigameCompleteButtons.SetActive(false);
         finalMinigameCompleteButton.SetActive(false);
         rewards.SetActive(false);
+        firstMinigameReward.SetActive(false);
 
         // Stores the starting positions of the cups so we know where they belong
         startPositions = new Vector3[cups.Length];
@@ -64,7 +65,7 @@ public class CupMixerChallenge : MonoBehaviour
             startPositions[i] = cups[i].transform.position;
         }
 
-        StartCoroutine(GameLoop());
+        //StartCoroutine(GameLoop());
     }
     void Update()
     {
@@ -72,6 +73,12 @@ public class CupMixerChallenge : MonoBehaviour
             SceneManager.LoadScene("EndScreen");
         
     }
+
+    public void StartCupMixingGameLoop()
+    {
+        StartCoroutine(GameLoop());
+    }
+
     IEnumerator GameLoop()
     {
         isShuffling = true;
@@ -248,28 +255,55 @@ public class CupMixerChallenge : MonoBehaviour
     {
         minigameCompleteButtons.SetActive(false);
         finalMinigameCompleteButton.SetActive(false);
-        rewards.SetActive(true);
+
+        if (numberOfTimesCompleted == 1)
+        {
+            firstMinigameReward.SetActive(true);
+        }
+
+        if (numberOfTimesCompleted >= 2)
+        {
+            rewards.SetActive(true);
+        }
     }
 
     public void GetHintReward()
     {
-        //Debug.Log("Asked for hint");
-        //characterSelection.choicePart = characterSelection.choicePart + 1;
-        //characterSelection.PrintDialog(characterSelection.ObjectDescriptions[characterSelection.objNum][characterSelection.choicePart]);
+        Debug.Log("Asked for hint");
+        characterSelection.choicePart = characterSelection.choicePart + 1;
+        characterSelection.PrintDialog(characterSelection.ObjectDescriptions[characterSelection.objNum][characterSelection.choicePart]);
 
         cupGameScreen.SetActive(false);
+        characterSelection.playCupChallengeButton.SetActive(false);
     }
 
     public void GetMoneyReward()
     {
-        StaticData.balance = StaticData.balance + moneyValue;
-        balanceText.text = "Balance: "+(StaticData.balance).ToString();
+        if (numberOfTimesCompleted == 1)
+        {
+            StaticData.balance = StaticData.balance + moneyValue;
+            balanceText.text = "Balance: " + (StaticData.balance).ToString();
+        }
+
+        if (numberOfTimesCompleted == 2)
+        {
+            StaticData.balance = StaticData.balance + moneyValue + 100;
+            balanceText.text = "Balance: " + (StaticData.balance).ToString();
+        }
+
+        if (numberOfTimesCompleted == 3)
+        {
+            StaticData.balance = StaticData.balance + moneyValue + 200;
+            balanceText.text = "Balance: " + (StaticData.balance).ToString();
+        }
 
         cupGameScreen.SetActive(false);
+        characterSelection.playCupChallengeButton.SetActive(false);
     }
 
     void ChallengeFailed()
     {
         cupGameScreen.SetActive(false);
+        characterSelection.playCupChallengeButton.SetActive(false);
     }
 }
