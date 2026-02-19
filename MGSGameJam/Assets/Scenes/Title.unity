@@ -572,8 +572,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Credits
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c6b9ab597b52ed944827a37bf3c7cf14, type: 2}
-  m_sharedMaterial: {fileID: -7888895011680155492, guid: c6b9ab597b52ed944827a37bf3c7cf14, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 01e63e738df04364f9ae82dfdab6f7f4, type: 2}
+  m_sharedMaterial: {fileID: -1561626007509871237, guid: 01e63e738df04364f9ae82dfdab6f7f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -633,7 +633,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 4.993423}
+  m_margin: {x: 0, y: 7.530815, z: 0, w: 4.993423}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1263,8 +1263,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Exit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c6b9ab597b52ed944827a37bf3c7cf14, type: 2}
-  m_sharedMaterial: {fileID: -7888895011680155492, guid: c6b9ab597b52ed944827a37bf3c7cf14, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 01e63e738df04364f9ae82dfdab6f7f4, type: 2}
+  m_sharedMaterial: {fileID: -1561626007509871237, guid: 01e63e738df04364f9ae82dfdab6f7f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1324,7 +1324,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 7.134449, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1508,10 +1508,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start
+  m_text: start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c6b9ab597b52ed944827a37bf3c7cf14, type: 2}
-  m_sharedMaterial: {fileID: -7888895011680155492, guid: c6b9ab597b52ed944827a37bf3c7cf14, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 01e63e738df04364f9ae82dfdab6f7f4, type: 2}
+  m_sharedMaterial: {fileID: -1561626007509871237, guid: 01e63e738df04364f9ae82dfdab6f7f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1571,7 +1571,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 4.993433}
+  m_margin: {x: 0, y: 7.927182, z: 0, w: 4.993433}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
