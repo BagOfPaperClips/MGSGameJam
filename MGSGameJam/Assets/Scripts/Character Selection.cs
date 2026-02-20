@@ -13,7 +13,7 @@ public class CharacterSelection : MonoBehaviour
     [SerializeField] int clientNum;
     [SerializeField] int numClient = 0;
 
-    public string[][] ObjectDescriptions = new string[5][];
+    public string[][] ObjectDescriptions = new string[13][];
     
     [SerializeField] int NumberOfObjects;
     public int objNum;
@@ -68,6 +68,29 @@ public class CharacterSelection : MonoBehaviour
         //OBJECT5
         ObjectDescriptions[4] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
 
+        //OBJECT6
+        ObjectDescriptions[5] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+
+        //OBJECT7
+        ObjectDescriptions[6] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+
+        //OBJECT8
+        ObjectDescriptions[7] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+
+        //OBJECT9
+        ObjectDescriptions[8] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+
+        //OBJECT10
+        ObjectDescriptions[9] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+
+        //OBJECT11
+        ObjectDescriptions[10] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+
+        //OBJECT12
+        ObjectDescriptions[11] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+
+        //OBJECT13
+        ObjectDescriptions[12] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
         balanceAmount.text = "Balance: " + (StaticData.balance).ToString();
     }
 
@@ -177,7 +200,7 @@ public class CharacterSelection : MonoBehaviour
     {
         //Randomly picks an Object from the list and plays the first discription
         //NumberOfObjects = ObjectDescriptions.Length;
-        NumberOfObjects = 5;                                ///CHANGE THIS WHEN MORE ITEMS ARE ADDED
+        NumberOfObjects = 12;                                ///CHANGE THIS WHEN MORE ITEMS ARE ADDED
         objNum = Random.Range(0, NumberOfObjects);
         StaticData.presentobject = objNum;
         Debug.Log("Object: " + objNum);

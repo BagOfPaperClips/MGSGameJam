@@ -14,6 +14,14 @@ public class ObjectCreation : MonoBehaviour
     public GameObject[] object3 = new GameObject[4];
     public GameObject[] object4 = new GameObject[4];
     public GameObject[] object5 = new GameObject[4];
+    public GameObject[] object6 = new GameObject[4];
+    public GameObject[] object7 = new GameObject[4];
+    public GameObject[] object8 = new GameObject[4];
+    public GameObject[] object9 = new GameObject[4];
+    public GameObject[] object10 = new GameObject[4];
+    public GameObject[] object11 = new GameObject[4];
+    public GameObject[] object12 = new GameObject[4];
+    public GameObject[] object13 = new GameObject[4];
 
     [SerializeField] UnityEngine.UI.Button bset1;
     [SerializeField] UnityEngine.UI.Button bset2;
@@ -62,6 +70,14 @@ public class ObjectCreation : MonoBehaviour
                     object3[i].SetActive(false);
                     object4[i].SetActive(false);
                     object5[i].SetActive(false);
+                    object6[i].SetActive(false);
+                    object7[i].SetActive(false);
+                    object8[i].SetActive(false);
+                    object9[i].SetActive(false);
+                    object10[i].SetActive(false);
+                    object11[i].SetActive(false);
+                    object12[i].SetActive(false);
+                    object13[i].SetActive(false);
 
                 }
                 break;
@@ -74,6 +90,14 @@ public class ObjectCreation : MonoBehaviour
                     object3[i].SetActive(false);
                     object4[i].SetActive(false);
                     object5[i].SetActive(false);
+                    object6[i].SetActive(false);
+                    object7[i].SetActive(false);
+                    object8[i].SetActive(false);
+                    object9[i].SetActive(false);
+                    object10[i].SetActive(false);
+                    object11[i].SetActive(false);
+                    object12[i].SetActive(false);
+                    object13[i].SetActive(false);
 
                 }
 
@@ -88,6 +112,14 @@ public class ObjectCreation : MonoBehaviour
                     object1[i].SetActive(false);
                     object4[i].SetActive(false);
                     object5[i].SetActive(false);
+                    object6[i].SetActive(false);
+                    object7[i].SetActive(false);
+                    object8[i].SetActive(false);
+                    object9[i].SetActive(false);
+                    object10[i].SetActive(false);
+                    object11[i].SetActive(false);
+                    object12[i].SetActive(false);
+                    object13[i].SetActive(false);
 
                 }
                 break;
@@ -100,6 +132,15 @@ public class ObjectCreation : MonoBehaviour
                     object1[i].SetActive(false);
                     object4[i].SetActive(true);
                     object5[i].SetActive(false);
+                    object6[i].SetActive(false);
+                    object7[i].SetActive(false);
+                    object8[i].SetActive(false);
+                    object9[i].SetActive(false);
+                    object10[i].SetActive(false);
+                    object11[i].SetActive(false);
+                    object12[i].SetActive(false);
+                    object13[i].SetActive(false);
+
 
                 }
                 break;
@@ -112,7 +153,159 @@ public class ObjectCreation : MonoBehaviour
                     object1[i].SetActive(false);
                     object4[i].SetActive(false);
                     object5[i].SetActive(true);
+                    object6[i].SetActive(false);
+                    object7[i].SetActive(false);
+                    object8[i].SetActive(false);
+                    object9[i].SetActive(false);
+                    object10[i].SetActive(false);
+                    object11[i].SetActive(false);
+                    object12[i].SetActive(false);
+                    object13[i].SetActive(false);
 
+                }
+                break;
+            case 5:
+                for (int i = 0; i < object1.Length; i++)
+                {
+                    object3[i].SetActive(false);
+                    object2[i].SetActive(false);
+                    object1[i].SetActive(false);
+                    object4[i].SetActive(false);
+                    object5[i].SetActive(false);
+                    object6[i].SetActive(true);
+                    object7[i].SetActive(false);
+                    object8[i].SetActive(false);
+                    object9[i].SetActive(false);
+                    object10[i].SetActive(false);
+                    object11[i].SetActive(false);
+                    object12[i].SetActive(false);
+                    object13[i].SetActive(false);
+                }
+                break;
+            case 6:
+                for (int i = 0; i < object1.Length; i++)
+                {
+                    object3[i].SetActive(false);
+                    object2[i].SetActive(false);
+                    object1[i].SetActive(false);
+                    object4[i].SetActive(false);
+                    object5[i].SetActive(false);
+                    object6[i].SetActive(false);
+                    object7[i].SetActive(true);
+                    object8[i].SetActive(false);
+                    object9[i].SetActive(false);
+                    object10[i].SetActive(false);
+                    object11[i].SetActive(false);
+                    object12[i].SetActive(false);
+                    object13[i].SetActive(false);
+                }
+                break;
+            case 7:
+                for (int i = 0; i < object1.Length; i++)
+                {
+                    object3[i].SetActive(false);
+                    object2[i].SetActive(false);
+                    object1[i].SetActive(false);
+                    object4[i].SetActive(false);
+                    object5[i].SetActive(false);
+                    object6[i].SetActive(false);
+                    object7[i].SetActive(false);
+                    object8[i].SetActive(true);
+                    object9[i].SetActive(false);
+                    object10[i].SetActive(false);
+                    object11[i].SetActive(false);
+                    object12[i].SetActive(false);
+                    object13[i].SetActive(false);
+                }
+                break;
+            case 8:
+                for (int i = 0; i < object1.Length; i++)
+                {
+                    object3[i].SetActive(false);
+                    object2[i].SetActive(false);
+                    object1[i].SetActive(false);
+                    object4[i].SetActive(false);
+                    object5[i].SetActive(false);
+                    object6[i].SetActive(false);
+                    object7[i].SetActive(false);
+                    object8[i].SetActive(false);
+                    object9[i].SetActive(true);
+                    object10[i].SetActive(false);
+                    object11[i].SetActive(false);
+                    object12[i].SetActive(false);
+                    object13[i].SetActive(false);
+                }
+                break;
+            case 9:
+                for (int i = 0; i < object1.Length; i++)
+                {
+                    object3[i].SetActive(false);
+                    object2[i].SetActive(false);
+                    object1[i].SetActive(false);
+                    object4[i].SetActive(false);
+                    object5[i].SetActive(false);
+                    object6[i].SetActive(false);
+                    object7[i].SetActive(false);
+                    object8[i].SetActive(false);
+                    object9[i].SetActive(false);
+                    object10[i].SetActive(true);
+                    object11[i].SetActive(false);
+                    object12[i].SetActive(false);
+                    object13[i].SetActive(false);
+                }
+                break;
+            case 10:
+                for (int i = 0; i < object1.Length; i++)
+                {
+                    object3[i].SetActive(false);
+                    object2[i].SetActive(false);
+                    object1[i].SetActive(false);
+                    object4[i].SetActive(false);
+                    object5[i].SetActive(false);
+                    object6[i].SetActive(false);
+                    object7[i].SetActive(false);
+                    object8[i].SetActive(false);
+                    object9[i].SetActive(false);
+                    object10[i].SetActive(false);
+                    object11[i].SetActive(true);
+                    object12[i].SetActive(false);
+                    object13[i].SetActive(false);
+                }
+                break;
+            case 11:
+                for (int i = 0; i < object1.Length; i++)
+                {
+                    object3[i].SetActive(false);
+                    object2[i].SetActive(false);
+                    object1[i].SetActive(false);
+                    object4[i].SetActive(false);
+                    object5[i].SetActive(false);
+                    object6[i].SetActive(false);
+                    object7[i].SetActive(false);
+                    object8[i].SetActive(true);
+                    object9[i].SetActive(false);
+                    object10[i].SetActive(false);
+                    object11[i].SetActive(false);
+                    object12[i].SetActive(true);
+                    object13[i].SetActive(false);
+                }
+                break;
+            case 12:
+                for (int i = 0; i < object1.Length; i++)
+                {
+                    object3[i].SetActive(false);
+                    object2[i].SetActive(false);
+                    object1[i].SetActive(false);
+                    object4[i].SetActive(false);
+                    object5[i].SetActive(false);
+                    object6[i].SetActive(false);
+                    object7[i].SetActive(false);
+                    object8[i].SetActive(true);
+                    object9[i].SetActive(false);
+                    object10[i].SetActive(false);
+                    object11[i].SetActive(false);
+                    object12[i].SetActive(false);
+                    object13[i].SetActive(true);
                 }
                 break;
         }
@@ -141,11 +334,42 @@ public class ObjectCreation : MonoBehaviour
                     break;
 
                 case 3:
+                    SucsessfulGuesses = SucsessfulGuesses + 1;
+                    StaticData.correctGuesses = SucsessfulGuesses;
+                    Debug.Log(SucsessfulGuesses);
                     StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
                 case 4:
                     StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
+                case 5:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 6:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 7:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 8:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 9:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 10:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 11:
+                    SucsessfulGuesses = SucsessfulGuesses + 1;
+                    StaticData.correctGuesses = SucsessfulGuesses;
+                    Debug.Log(SucsessfulGuesses);
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 12:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+
 
             }
             balanceText.text = "Balance: " + (StaticData.balance).ToString();
@@ -184,6 +408,36 @@ public class ObjectCreation : MonoBehaviour
                     StaticData.correctGuesses = SucsessfulGuesses;
                     Debug.Log(SucsessfulGuesses);
                     break;
+                case 5:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 6:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 7:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 8:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 9:
+                    SucsessfulGuesses = SucsessfulGuesses + 1;
+                    StaticData.correctGuesses = SucsessfulGuesses;
+                    Debug.Log(SucsessfulGuesses);
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 10:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 11:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 12:
+                    SucsessfulGuesses = SucsessfulGuesses + 1;
+                    StaticData.correctGuesses = SucsessfulGuesses;
+                    Debug.Log(SucsessfulGuesses);
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
 
             }
 
@@ -221,6 +475,36 @@ public class ObjectCreation : MonoBehaviour
                 case 4:
                     StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
+                case 5:
+                    SucsessfulGuesses = SucsessfulGuesses + 1;
+                    StaticData.correctGuesses = SucsessfulGuesses;
+                    Debug.Log(SucsessfulGuesses);
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 6:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 7:
+                    SucsessfulGuesses = SucsessfulGuesses + 1;
+                    StaticData.correctGuesses = SucsessfulGuesses;
+                    Debug.Log(SucsessfulGuesses);
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 8:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 9:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 10:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 11:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 12:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
 
             }
 
@@ -255,6 +539,39 @@ public class ObjectCreation : MonoBehaviour
                     SucsessfulGuesses = SucsessfulGuesses + 1;
                     StaticData.correctGuesses = SucsessfulGuesses;
                     Debug.Log(SucsessfulGuesses);
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 5:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 6:
+                    SucsessfulGuesses = SucsessfulGuesses + 1;
+                    StaticData.correctGuesses = SucsessfulGuesses;
+                    Debug.Log(SucsessfulGuesses);
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 7:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 8:
+                    SucsessfulGuesses = SucsessfulGuesses + 1;
+                    StaticData.correctGuesses = SucsessfulGuesses;
+                    Debug.Log(SucsessfulGuesses);
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 9:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 10:
+                    SucsessfulGuesses = SucsessfulGuesses + 1;
+                    StaticData.correctGuesses = SucsessfulGuesses;
+                    Debug.Log(SucsessfulGuesses);
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 11:
+                    StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
+                    break;
+                case 12:
                     StaticData.balance = StaticData.balance - 100;      /////------PRICE OF OBJECT -------//////////
                     break;
 
