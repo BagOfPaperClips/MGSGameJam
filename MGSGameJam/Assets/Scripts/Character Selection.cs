@@ -54,43 +54,43 @@ public class CharacterSelection : MonoBehaviour
         dialogueBox.SetActive(false);
 
         //OBJECT1
-        ObjectDescriptions[0] = new string[] { "Discription1P1", "Discription1P2" , "Discription1P3", "Theres Nothing else to say" };
+        ObjectDescriptions[0] = new string[] { "Discription1P1", "Discription1P2" , "Discription1P3", "Theres nothing else to say" };
 
         //OBJECT2
-        ObjectDescriptions[1] = new string[] { "Discription2P1", "Discription2P2", "Discription2P3", "Theres Nothing else to say" };
+        ObjectDescriptions[1] = new string[] { "Discription2P1", "Discription2P2", "Discription2P3", "Theres nothing else to say" };
 
         //OBJECT3
-        ObjectDescriptions[2] = new string[] { "Discription3P1", "Discription3P2", "Discription3P3", "Theres Nothing else to say" };
+        ObjectDescriptions[2] = new string[] { "Discription3P1", "Discription3P2", "Discription3P3", "Theres nothing else to say" };
 
         //OBJECT4
-        ObjectDescriptions[3] = new string[] { "Discription4P1", "Discription4P2", "Discription4P3", "Theres Nothing else to say" };
+        ObjectDescriptions[3] = new string[] { "Discription4P1", "Discription4P2", "Discription4P3", "Theres nothing else to say" };
 
         //OBJECT5
-        ObjectDescriptions[4] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+        ObjectDescriptions[4] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
 
         //OBJECT6
-        ObjectDescriptions[5] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+        ObjectDescriptions[5] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
 
         //OBJECT7
-        ObjectDescriptions[6] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+        ObjectDescriptions[6] = new string[] { "Be careful, it might crumble I your hands.", "Can be displayed in a museum.", "An archaeologist would find it", "Theres nothing else to say" };
 
         //OBJECT8
-        ObjectDescriptions[7] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+        ObjectDescriptions[7] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
 
         //OBJECT9
-        ObjectDescriptions[8] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+        ObjectDescriptions[8] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
 
         //OBJECT10
-        ObjectDescriptions[9] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+        ObjectDescriptions[9] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
 
         //OBJECT11
-        ObjectDescriptions[10] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+        ObjectDescriptions[10] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
 
         //OBJECT12
-        ObjectDescriptions[11] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+        ObjectDescriptions[11] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
 
         //OBJECT13
-        ObjectDescriptions[12] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres Nothing else to say" };
+        ObjectDescriptions[12] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
         balanceAmount.text = "Balance: " + (StaticData.balance).ToString();
     }
 

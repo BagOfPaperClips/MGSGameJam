@@ -19,8 +19,10 @@ public class BGM1 : MonoBehaviour
         gameSong.enabled =
             SceneManager.GetActiveScene().name.Equals("ActionTime") ||
             SceneManager.GetActiveScene().name.Equals("CupMixingChallenge") ||
-            SceneManager.GetActiveScene().name.Equals("EndScreen") ||
             SceneManager.GetActiveScene().name.Equals("TutorialScene") ||
-            SceneManager.GetActiveScene().name.Equals("Game");
+            SceneManager.GetActiveScene().name.Equals("Game") ||
+            SceneManager.GetActiveScene().name.Equals("Credits") ||
+            SceneManager.GetActiveScene().name.Equals("Help") ||
+            SceneManager.GetActiveScene().name.Equals("Title");
     }
 }
