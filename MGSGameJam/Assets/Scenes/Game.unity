@@ -1758,11 +1758,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ClientsNames:
-  - Client1
-  - Client2
-  - Client3
-  - Client4
-  - Client5
+  - "Coo Aren\u2019t you a smart little thing? Why won\u2019t you go fetch this mistress
+    some pretty things?"
+  - "\u2026"
+  - "I didn\u2019t come here to mess around. I mean business. "
+  - Greetings, mortal! I will need these mysterious items
+  - "Hmm.. I guess you\u2019ll do.   I will be needing: "
   numberOfClients: 0
   clientNum: 0
   numClient: 0

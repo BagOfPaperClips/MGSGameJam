@@ -919,12 +919,12 @@ MonoBehaviour:
   dialog:
   - "Good day, one and all, lovely day for some shopping, isn\u2019t it?"
   - "And what a reward you are. Hmmmm\u2026"
-  - Okay! Here is what you've got to do.
+  - 'Okay! Here is what you''ve got to do. '
   - Your goal is to provide clients with the item they ask for.
   - You can, of course, ask for a hint, but that will cost you.
-  - But be careful with your spending, you only have so much money at your disposal.
-  - "Finally, if you're feeling frisky, why not try your hand at a little cup game\u2026
-    perhaps luck will be on your side tonight to help you out. "
+  - And be careful cuz you only have so much money.
+  - "Finally, if you're feeling frisky, try your hand at the cup game\u2026 perhaps
+    you're feeling lucky?"
   - Welp, that's about it from me. Good luck, sucker.
   - Don't mess things up.
   textObj: {fileID: 1782940418}
