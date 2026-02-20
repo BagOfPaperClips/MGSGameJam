@@ -108,18 +108,612 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 4
+        width: 81
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8a813c9c5d89340b63988032b376a3
+      internalID: -747235476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 4
+        width: 81
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffae77fb5427cb74caa2f3874e1c7ad4
+      internalID: 1326593550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 4
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4886c34d8ea79a4bb27eb8149a3492c
+      internalID: 90444410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 4
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1753f00ced16df64786653e5f4ac0ff4
+      internalID: 722804687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 4
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5856f18884918204fa5869c4a1f88740
+      internalID: -1887875448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 4
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45d8df40c5af5a41a62f3bcb1c3c352
+      internalID: -862916380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 4
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80326d7e93b4c144e98f32491732b58c
+      internalID: -2129244458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 4
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62611d7c489ed842a3e130992c3f700
+      internalID: 168687908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 4
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eac94f462c651142a2a62296dadeb96
+      internalID: 1937833417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 4
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4955ab6607f71784fa5d868021103f56
+      internalID: -173806115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 4
+        width: 81
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a7c954197322c4a9953f8458d258ba
+      internalID: 2034894183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 4
+        width: 81
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c8a740034d24a489756c17ae7a3a91
+      internalID: -2075065700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 4
+        width: 80
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00d7c9909193fe41b633a7f5e18981a
+      internalID: 34032122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 4
+        width: 81
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724e7c280fed88d4593e6c5e8a865c3f
+      internalID: 376690426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 4
+        width: 81
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506db7ad65fcb284c8daaf507c4ce718
+      internalID: 1769302844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 4
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d2880411bfa974eb947b3774b98257
+      internalID: -1024147945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 0
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f4785e1f6c72a49bd8f8ed02da90bc
+      internalID: 1266864630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 0
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2658ac8a47a1ca74a81ecf82fc11b3bc
+      internalID: 531767107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 4
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b14624281c4a743a4087f4c2e8d833
+      internalID: 646157240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 4
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360045e4d06539c4b8ef6e10f942c3de
+      internalID: -1530696726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 2
+        width: 82
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d928195f5ade64a806f1ddf15c1fe9
+      internalID: 451122148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 1
+        width: 82
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218e224da66cd274fac51823a52fd93d
+      internalID: -1623722567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 4
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66bbf2ffb17442a4a910972035d9ed9c
+      internalID: 1798649724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 2109
+        y: 4
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4fa6b58cd9c5f748bdddf38e0554e21
+      internalID: -638950661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 2209
+        y: 4
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafdf06855466eb4d93f0c14078280ee
+      internalID: 1589692471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 4
+        width: 81
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e591731d333e17e4195a63dd56bd4cf9
+      internalID: 1143263877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursed mask-spriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 4
+        width: 81
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f851707432caa46a50fb1f1c1b6383
+      internalID: 84340315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 33939cfded668ed46b9320d897eee8d4
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cursed mask-spriteSheet_0: -747235476
+      cursed mask-spriteSheet_1: 1326593550
+      cursed mask-spriteSheet_10: 2034894183
+      cursed mask-spriteSheet_11: -2075065700
+      cursed mask-spriteSheet_12: 34032122
+      cursed mask-spriteSheet_13: 376690426
+      cursed mask-spriteSheet_14: 1769302844
+      cursed mask-spriteSheet_15: -1024147945
+      cursed mask-spriteSheet_16: 1266864630
+      cursed mask-spriteSheet_17: 531767107
+      cursed mask-spriteSheet_18: 646157240
+      cursed mask-spriteSheet_19: -1530696726
+      cursed mask-spriteSheet_2: 90444410
+      cursed mask-spriteSheet_20: 451122148
+      cursed mask-spriteSheet_21: -1623722567
+      cursed mask-spriteSheet_22: 1798649724
+      cursed mask-spriteSheet_23: -638950661
+      cursed mask-spriteSheet_24: 1589692471
+      cursed mask-spriteSheet_25: 1143263877
+      cursed mask-spriteSheet_26: 84340315
+      cursed mask-spriteSheet_3: 722804687
+      cursed mask-spriteSheet_4: -1887875448
+      cursed mask-spriteSheet_5: -862916380
+      cursed mask-spriteSheet_6: -2129244458
+      cursed mask-spriteSheet_7: 168687908
+      cursed mask-spriteSheet_8: 1937833417
+      cursed mask-spriteSheet_9: -173806115
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
