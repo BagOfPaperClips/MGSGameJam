@@ -921,10 +921,10 @@ MonoBehaviour:
   - "And what a reward you are. Hmmmm\u2026"
   - 'Okay! Here is what you''ve got to do. '
   - Your goal is to provide clients with the item they ask for.
-  - You can, of course, ask for a hint, but that will cost you.
-  - And be careful cuz you only have so much money.
-  - "Finally, if you're feeling frisky, try your hand at the cup game\u2026 perhaps
-    you're feeling lucky?"
+  - You can, of course, ask for a hint, but that will cost you 200 apiece.
+  - But be careful cuz you only have so much money at your disposal.
+  - "Finally, if you're feeling lucky, why not try your hand at the cup game? Perhaps
+    that\u2019ll make your night of hard work easier\u2026"
   - Welp, that's about it from me. Good luck, sucker.
   - Don't mess things up.
   textObj: {fileID: 1782940418}

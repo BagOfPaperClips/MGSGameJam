@@ -37,6 +37,21 @@ public class CupMixerChallenge : MonoBehaviour
     [SerializeField] AudioSource incorrectSfx;
     [SerializeField] AudioSource cupShufflingSfx;
 
+    [Header("Dialogue")]
+    [SerializeField] GameObject dialogueBox;
+    [SerializeField] GameObject dialogue1;
+    [SerializeField] GameObject dialogue2;
+    [SerializeField] GameObject dialogue3;
+    [SerializeField] GameObject dialogue4;
+    [SerializeField] GameObject dialogue5;
+    [SerializeField] GameObject dialogue6;
+    [SerializeField] GameObject dialogueButton1;
+    [SerializeField] GameObject dialogueButton2;
+    [SerializeField] GameObject dialogueButton3;
+    [SerializeField] GameObject dialogueButton4;
+    [SerializeField] GameObject dialogueButton5;
+    [SerializeField] GameObject dialogueButton6;
+
     public BudgetManager budgetManager;
     public CharacterSelection characterSelection;
 
@@ -63,6 +78,8 @@ public class CupMixerChallenge : MonoBehaviour
         rewards.SetActive(false);
         firstMinigameReward.SetActive(false);
 
+        dialogueBox.SetActive(false);
+
         // Stores the starting positions of the cups so we know where they belong
         startPositions = new Vector3[cups.Length];
         for (int i = 0; i < cups.Length; i++)
@@ -79,8 +96,56 @@ public class CupMixerChallenge : MonoBehaviour
         
     }
 
+    public void FirstDialogue()
+    {
+        StaticData.balance = StaticData.balance - 50;
+        balanceText.text = "Balance: " + (StaticData.balance).ToString();
+
+        if (StaticData.cupGamePlayed == true)
+        {
+            StartCupMixingGameLoop();
+        }
+        else
+        {
+            dialogueBox.SetActive(true);
+            dialogue1.SetActive(true);
+        }
+    }
+
+    public void SecondDialogue()
+    {
+        dialogueBox.SetActive(true);
+        dialogue1.SetActive(false);
+        dialogue2.SetActive(true);
+    }
+
+    public void ThirdDialogue()
+    {
+        dialogueBox.SetActive(true);
+        dialogue2.SetActive(false);
+        dialogue3.SetActive(true);
+    }
+
+    public void FourthDialogue()
+    {
+        dialogueBox.SetActive(true);
+        dialogue3.SetActive(false);
+        dialogue4.SetActive(true);
+    }
+
+    public void FifthDialogue()
+    {
+        dialogueBox.SetActive(true);
+        dialogue4.SetActive(false);
+        dialogue5.SetActive(true);
+    }
+
     public void StartCupMixingGameLoop()
     {
+        StaticData.cupGamePlayed = true;
+        dialogueBox.SetActive(false);
+        dialogue5.SetActive(false);
+
         StartCoroutine(GameLoop());
     }
 
@@ -187,7 +252,7 @@ public class CupMixerChallenge : MonoBehaviour
             if (strikes == 3)
             {
                 incorrectSfx.Play();
-                ChallengeFailed();
+                FinalDialogue();
             }
         }
     }
@@ -307,13 +372,13 @@ public class CupMixerChallenge : MonoBehaviour
 
         if (numberOfTimesCompleted == 2)
         {
-            StaticData.balance = StaticData.balance + moneyValue + 100;
+            StaticData.balance = StaticData.balance + moneyValue + 200;
             balanceText.text = "Balance: " + (StaticData.balance).ToString();
         }
 
         if (numberOfTimesCompleted == 3)
         {
-            StaticData.balance = StaticData.balance + moneyValue + 200;
+            StaticData.balance = StaticData.balance + moneyValue + 400;
             balanceText.text = "Balance: " + (StaticData.balance).ToString();
         }
 
@@ -321,8 +386,21 @@ public class CupMixerChallenge : MonoBehaviour
         characterSelection.playCupChallengeButton.SetActive(false);
     }
 
-    void ChallengeFailed()
+    public void FinalDialogue()
     {
+        dialogueBox.SetActive(true);
+        dialogue1.SetActive(false);
+        dialogue2.SetActive(false);
+        dialogue3.SetActive(false);
+        dialogue4.SetActive(false);
+        dialogue5.SetActive(false);
+        dialogue6.SetActive(true);
+    }
+
+    public void ChallengeFailed()
+    {
+        dialogueBox.SetActive(false);
+        dialogue6.SetActive(false);
         cupGameScreen.SetActive(false);
         characterSelection.playCupChallengeButton.SetActive(false);
     }

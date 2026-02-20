@@ -10,6 +10,7 @@ public class Reset : MonoBehaviour
         StaticData.correctGuesses = 0;
         StaticData.totalCleints = 0;
         StaticData.balance = 1000;
+        StaticData.cupGamePlayed = false;
     }
 
     // Update is called once per frame

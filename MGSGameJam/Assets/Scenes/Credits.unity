@@ -179,10 +179,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'SAM: Lead Programmer
+  m_text: 'SAM: Lead Programmer, Game Design
 
-    Katherine: Game Design, Programming, Narrative
-    Design
+    Katherine: Game Design, Programming,
+    Narrative Design
 
     Mars: Item and UI Artist, Sound Design, Narrative Design
 
