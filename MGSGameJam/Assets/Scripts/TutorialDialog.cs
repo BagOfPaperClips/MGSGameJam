@@ -30,7 +30,6 @@ public class TutorialDialog : MonoBehaviour
             case 0:
                 textObj.text = dialog[0];
                 
-
                 break;
             case 1:
                 textObj.text = dialog[1];
@@ -41,7 +40,6 @@ public class TutorialDialog : MonoBehaviour
                     yap.Play();
                 }
                 
-
                 break;
             case 2:
                 textObj.text = dialog[2];
@@ -81,6 +79,7 @@ public class TutorialDialog : MonoBehaviour
                     yap.Stop();
                     yap.Play();
                 }
+
                 break;
             case 6:
                 textObj.text = dialog[6];
@@ -93,8 +92,30 @@ public class TutorialDialog : MonoBehaviour
 
                 break;
             case 7:
-                SceneManager.LoadScene("Game");
+                textObj.text = dialog[7];
+                if (soundstart == true)
+                {
+                    soundstart = false;
+                    yap.Stop();
+                    yap.Play();
+                }
+
                 break;
+            case 8:
+                textObj.text = dialog[8];
+                if (soundstart == true)
+                {
+                    soundstart = false;
+                    yap.Stop();
+                    yap.Play();
+                }
+
+                break;
+            case 9:
+                SceneManager.LoadScene("Game");
+
+                break;
+                
         }
     }
     void nextbit()

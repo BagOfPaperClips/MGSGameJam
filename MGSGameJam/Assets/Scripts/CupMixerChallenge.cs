@@ -32,6 +32,11 @@ public class CupMixerChallenge : MonoBehaviour
     public GameObject firstMinigameReward;
     public int moneyValue;
 
+    [Header("Audio")]
+    [SerializeField] AudioSource correctSfx;
+    [SerializeField] AudioSource incorrectSfx;
+    [SerializeField] AudioSource cupShufflingSfx;
+
     public BudgetManager budgetManager;
     public CharacterSelection characterSelection;
 
@@ -92,6 +97,8 @@ public class CupMixerChallenge : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
 
         // 2. Shuffle Loop
+        cupShufflingSfx.time = 10.0f;
+        cupShufflingSfx.Play();
         for (int i = 0; i < totalRounds; i++)
         {
             // Lift cups up
@@ -120,6 +127,7 @@ public class CupMixerChallenge : MonoBehaviour
 
         ToggleButtons(true);
         isShuffling = false;
+        cupShufflingSfx.Stop();
     }
 
     // Helper to move all cups at once by a specific offset
@@ -149,14 +157,17 @@ public class CupMixerChallenge : MonoBehaviour
         if (hasPrize)
         {
             score++;
+            UpdateCounterUI();
             StartCoroutine(FlashCounter(Color.green));
+            correctSfx.Play();
         }
         else
         {
             //score = 0;
             strikes++;
             UpdateStrikesUI();
-            StartCoroutine(FlashCounter(Color.red));
+            StartCoroutine(FlashStrikesCounter(Color.red));
+            incorrectSfx.Play();
         }
         UpdateCounterUI();
 
@@ -170,10 +181,12 @@ public class CupMixerChallenge : MonoBehaviour
 
             if (score == 3)
             {
+                correctSfx.Play();
                 ChallengeComplete();
             }
             if (strikes == 3)
             {
+                incorrectSfx.Play();
                 ChallengeFailed();
             }
         }
@@ -203,7 +216,14 @@ public class CupMixerChallenge : MonoBehaviour
         counterTxt.color = Color.white;
     }
 
-    void UpdateStrikesUI() => numberOfStrikes.text = "Strikes: " + strikes;
+    void UpdateStrikesUI() => numberOfStrikes.text = "strikes: " + strikes;
+
+    IEnumerator FlashStrikesCounter(Color color)
+    {
+        numberOfStrikes.color = color;
+        yield return new WaitForSeconds(0.5f);
+        numberOfStrikes.color = Color.white;
+    }
 
     void ToggleButtons(bool state)
     {
