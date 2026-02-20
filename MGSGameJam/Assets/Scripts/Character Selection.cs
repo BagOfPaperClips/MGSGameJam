@@ -54,43 +54,43 @@ public class CharacterSelection : MonoBehaviour
         dialogueBox.SetActive(false);
 
         //OBJECT1
-        ObjectDescriptions[0] = new string[] { "Discription1P1", "Discription1P2" , "Discription1P3", "Theres nothing else to say" };
+        ObjectDescriptions[0] = new string[] { "Use caution while handling.", "Deadly container.", "This will kill you if consumed carelessly.", "Theres nothing else to say" };
 
         //OBJECT2
-        ObjectDescriptions[1] = new string[] { "Discription2P1", "Discription2P2", "Discription2P3", "Theres nothing else to say" };
+        ObjectDescriptions[1] = new string[] { "Find a tool with reach.", "Flying death.", "Will kill you from a distance.", "Theres nothing else to say" };
 
         //OBJECT3
-        ObjectDescriptions[2] = new string[] { "Discription3P1", "Discription3P2", "Discription3P3", "Theres nothing else to say" };
+        ObjectDescriptions[2] = new string[] { "You’ll want this on an adventure.", "Used for minor injuries.", "A magical liquid that heals minor injuries.", "Theres nothing else to say" };
 
         //OBJECT4
-        ObjectDescriptions[3] = new string[] { "Discription4P1", "Discription4P2", "Discription4P3", "Theres nothing else to say" };
+        ObjectDescriptions[3] = new string[] { "From a careless servant, it's become useless now.", "Broken from transport or a reckless servant, it won’t hold anything now.", "Broken vase, doesn’t have other uses.", "Theres nothing else to say" };
 
         //OBJECT5
-        ObjectDescriptions[4] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
+        ObjectDescriptions[4] = new string[] { "I’m in search of something for a lab.", "Scientists use it to hold samples.", "It's an empty vile.", "Theres nothing else to say" };
 
         //OBJECT6
-        ObjectDescriptions[5] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
+        ObjectDescriptions[5] = new string[] { "Something aged and could be passed along the family line.", "Well-used set of tools with a long history.", "Silverware, passable from generation to generation.", "Theres nothing else to say" };
 
         //OBJECT7
-        ObjectDescriptions[6] = new string[] { "Be careful, it might crumble I your hands.", "Can be displayed in a museum.", "An archaeologist would find it", "Theres nothing else to say" };
+        ObjectDescriptions[6] = new string[] { "Be careful, it might crumble in your hands.", "Can be displayed in a museum.", "An archaeologist would find it", "Theres nothing else to say" };
 
         //OBJECT8
-        ObjectDescriptions[7] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
+        ObjectDescriptions[7] = new string[] { "Azure, damaged from rough handling.", "A deep indigo that once radiated regal elegance. ", "A broken gemstone which long served its purpose for those born in September. ", "Theres nothing else to say" };
 
         //OBJECT9
-        ObjectDescriptions[8] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
+        ObjectDescriptions[8] = new string[] { "Damaged carmine, even with its high durability.", "Like pigeon's blood, but shattered.", "A broken gemstone which long served its purpose for those born in July. ", "Theres nothing else to say" };
 
         //OBJECT10
-        ObjectDescriptions[9] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
+        ObjectDescriptions[9] = new string[] { "The colour of nature in a beautiful encasing.", "This object is a variety of the mineral beryl.", "A gift for someone born in May.", "Theres nothing else to say" };
 
         //OBJECT11
-        ObjectDescriptions[10] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
+        ObjectDescriptions[10] = new string[] { "They like to hang.", "Made of silver.", "You wear it on your ears.", "Theres nothing else to say" };
 
         //OBJECT12
-        ObjectDescriptions[11] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
+        ObjectDescriptions[11] = new string[] { "It sure is creepy.", "I’m not sure why an auction house would have such an item.", "A bag of ol’ bones. Hopefully not human…", "Theres nothing else to say" };
 
         //OBJECT13
-        ObjectDescriptions[12] = new string[] { "Discription5P1", "Discription5P2", "Discription5P3", "Theres nothing else to say" };
+        ObjectDescriptions[12] = new string[] { "Careful, don’t get led into its schemes.", "Of lesser devils, it often serves higher powers.", "Malicious humanoid fiend with leathery skin and a barbed tail.", "Theres nothing else to say" };
         balanceAmount.text = "Balance: " + (StaticData.balance).ToString();
     }
 

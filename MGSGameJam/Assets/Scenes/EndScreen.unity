@@ -634,11 +634,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-  - "You guessed none correctly.    You\u2019ll be sleepin\u2019 with the fishes
-    tonight."
-  - "You guessed one correctly.    Seems this one ain\u2019t so bright."
-  - You guessed two correctly.    Oof! Be glad I paid you in advance
-  - You got them all!     Oooh, baby, we're having dinner tonight!
+  - "You guessed none correctly. You\u2019ll be sleepin\u2019 with the fishes tonight."
+  - "You guessed one correctly. Seems this one ain\u2019t so bright."
+  - You guessed two correctly. Oof! Be glad I paid you in advance
+  - You got them all! Oooh, baby, we're having dinner tonight!
   numSuccess: 0
   text1: {fileID: 1065881797}
   a1: {fileID: 10970529}

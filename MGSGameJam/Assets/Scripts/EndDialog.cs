@@ -28,6 +28,7 @@ public class EndDialog : MonoBehaviour
     {
         if (StaticData.balance <= 0)
         {
+            a1.Play();
             text1.text = "You ran out of money? What a bloody fool...";
         }
         else
